@@ -351,7 +351,9 @@ else {
 
 const nssfDeductions = grossSalary * 0.06;
 
-console.log(`NSSF Deductions: ${nssfDeductions}`)
+console.log(`NSSF Deductions: ${nssfDeductions}`) 
+
+//this code calculates the nssf deductions by taking 6% of the gross salary and then logs a message to the console  showing calculated nssf deductions.
 
 
    ///Housing levy
@@ -360,11 +362,13 @@ console.log(`NSSF Deductions: ${nssfDeductions}`)
 
    console.log(`Housing levy ${grossSalary}`)
 
+   // this code calculates the housing levy by taking 15% of the gross salary then logs a message to then console showing the calculated housing levy.
+
 
 
 }
 
-##AUTHOR 
+AUTHOR 
 
 This program was written by Megan Kwamboka Nyakina.
 
