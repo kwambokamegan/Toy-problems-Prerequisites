@@ -373,6 +373,7 @@ AUTHOR
 This program was written by Megan Kwamboka Nyakina.
 
 
+DATE :30/6/2023
 
 
 
@@ -417,16 +418,4 @@ This program was written by Megan Kwamboka Nyakina.
 
 
 
-function studentGradeDetector(){
 
-    //Prompts user to enter students marks
-
-    let marks = prompt("Kindly  enter the students marks(between 0 and 100)")
-
-
-// Converts the input to a number 
-
-     marks = Number(marks);
-
-
-//Validates the input 
