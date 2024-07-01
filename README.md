@@ -1,3 +1,13 @@
+# AUTHOR 
+
+This program was written by Megan Kwamboka Nyakina.
+
+
+ # DATE 
+30/6/2023
+
+
+
 # Week 1 Toy Problems Prerequisites
 
 
@@ -368,12 +378,7 @@ console.log(`NSSF Deductions: ${nssfDeductions}`)
 
 }
 
-AUTHOR 
 
-This program was written by Megan Kwamboka Nyakina.
-
-
-DATE :30/6/2023
 
 
 
