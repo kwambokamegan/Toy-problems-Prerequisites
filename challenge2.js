@@ -51,7 +51,7 @@ function speedDetector(){
 
 //call the function to promt
 
-speedDetector()
+speedDetector();
 
 
 

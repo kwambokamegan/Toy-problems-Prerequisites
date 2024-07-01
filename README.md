@@ -5,7 +5,7 @@ This code challenge  includes 3 challenges : Student grade generator, Speed dete
 
 
  
- 1.CREATING A REPOSITORY 
+ # .CREATING A REPOSITORY 
 
 Create a repository in your git hub account by  clicking the "+" icon and select "New Repository". 
 
@@ -26,7 +26,7 @@ Open the created repository and create a folder called my-solutions.
  Run code . to open vs code.
 
 
-#CHALLENGE 1 : STUDENT GRADE GENERATOR (TOY PROBLEM)
+# CHALLENGE 1 : STUDENT GRADE GENERATOR (TOY PROBLEM)
 
 In the first challenge we have create a function thet prompts the user to input students marks , validates the input and then gives an output of the corresponding grade . 
 
@@ -43,7 +43,7 @@ It ensures input is between 0 and 100 and assigns grades based on the criteria:
 'E' for marks less than 40
 
 
-#Function Implementation
+# Function Implementation
 
 The function `studentGradeDEtector` ;
 
@@ -55,7 +55,7 @@ The function `studentGradeDEtector` ;
 
 4. Outputs the grade to the console.
 
-###code 
+### code 
 
 function studentGradeDetector(){
 
@@ -117,7 +117,7 @@ studentGradeDetector();
 
 
 
-##USAGE
+## USAGE
 
 Copy the ode into a javascript file 
 
@@ -136,11 +136,11 @@ This `README.md` provides a clear description of the challenge , the function im
 
 
 
-#CHALLENGE 2 : SPEED DETECTOR (TOY PROBLEM)
+# CHALLENGE 2 : SPEED DETECTOR (TOY PROBLEM)
 
 This challenge has a javascript function that takes in the speed of a car as input, vlidates the input and calculates demerit points based on the speed limit . If the speed is within the limit it prints okayn, otherwise it prints the number of demerit points . If the demerit points exeed the set threshold it prints "Licence Suspended"
 
-##Function Implementaion
+## Function Implementaion
 
 The  main function , `speedDetector` performs the functions:
 
@@ -158,7 +158,7 @@ The  main function , `speedDetector` performs the functions:
 
 7.Prints "Lincence suspended if the demerit points exeed tyhe maximum allowed .
 
-###code 
+### code 
 
 
 function speedDetector(){
@@ -216,7 +216,7 @@ function speedDetector(){
 speedDetector()
 
 
-##usage 
+## usage 
 
 To use this function
 
@@ -235,7 +235,7 @@ This `README.md` provides a clear description of the challenge , the function im
 
 
 
-CHALLENGE 3 : NET SALARY CALCULATOR (TOY PROBLEM)
+## CHALLENGE 3 : NET SALARY CALCULATOR (TOY PROBLEM)
 
 This challence contains a program that calculates an individuals net salary by getting the inputs of basic salaries and benefits.
 
@@ -244,7 +244,7 @@ It calculates the payee , NHIF Deductions, NSSF Deductions , gross salary and ne
 Specific values used are gotten fron the websites provided.
 
 
-###code
+## code
 
 
 const  basicSalary = parsefloat(prompt('Kindly enter your basic salary '));
