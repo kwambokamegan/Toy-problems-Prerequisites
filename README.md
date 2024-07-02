@@ -1,21 +1,59 @@
-# AUTHOR 
+# Week 1 Toy problems Prerequisites
+
+Prerequisites: 
+
+1. Create a repository on your GitHub account. 
+
+NB: One folder, with 3-4 files for each solution. Please note that a single file should only hold one solution.
+
+2. Use JavaScript to wire down the solution.
+
+3. Push the solution to the above repository once done.
+
+4. Submit the repository link for grading.
+
+5. Ensure your repository has a well written README.
+
+## System Requirements
+
+1. Node 18+
+
+2. A browser capable of running java script eg; safari, chrome, edge, firefox
+
+3.Operating system (windows 10+ , MacOS, Linux)
+
+4.Text editor capabke of running Javascript eg; sublime text, vs code 
+
+
+
+
+## Installation
+
+
+1. Open your  terminal
+
+2.clone the repository by running the command : git clone  git@github.com:kwambokamegan/Toy-problems-Prerequisites.git
+ 
+
+
+## AUTHOR 
 
 This program was written by Megan Kwamboka Nyakina.
 
 
- # DATE 
+ ## DATE 
 30/6/2023
 
 
 
-# Week 1 Toy Problems Prerequisites
+## Week 1 Toy Problems Prerequisites
 
 
 This code challenge  includes 3 challenges : Student grade generator, Speed detector, and Net salary calculator.
 
 
  
- # .CREATING A REPOSITORY 
+ ## CREATING A REPOSITORY 
 
 Create a repository in your git hub account by  clicking the "+" icon and select "New Repository". 
 
@@ -36,7 +74,7 @@ Open the created repository and create a folder called my-solutions.
  Run code . to open vs code.
 
 
-# CHALLENGE 1 : STUDENT GRADE GENERATOR (TOY PROBLEM)
+## CHALLENGE 1 : STUDENT GRADE GENERATOR (TOY PROBLEM)
 
 In the first challenge we have create a function thet prompts the user to input students marks , validates the input and then gives an output of the corresponding grade . 
 
@@ -53,7 +91,7 @@ It ensures input is between 0 and 100 and assigns grades based on the criteria:
 'E' for marks less than 40
 
 
-# Function Implementation
+## Function Implementation
 
 The function `studentGradeDEtector` ;
 
