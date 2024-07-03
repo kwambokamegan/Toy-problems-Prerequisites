@@ -1,6 +1,6 @@
 # Week 1 Toy problems Prerequisites
 
-Prerequisites: 
+## Prerequisites: 
 
 1. Create a repository on your GitHub account. 
 
@@ -184,84 +184,32 @@ This `README.md` provides a clear description of the challenge , the function im
 
 
 
-# CHALLENGE 2 : SPEED DETECTOR (TOY PROBLEM)
+## CHALLENGE 2 : SPEED DETECTOR (TOY PROBLEM)
 
 This challenge has a javascript function that takes in the speed of a car as input, vlidates the input and calculates demerit points based on the speed limit . If the speed is within the limit it prints okayn, otherwise it prints the number of demerit points . If the demerit points exeed the set threshold it prints "Licence Suspended"
 
-## Function Implementaion
-
-The  main function , `speedDetector` performs the functions:
-
-1.Prompts user to enter tye speed of the car
-
-2. Converts the input into a number
-
-3. Validates the input to ensure it is a non-negative number
-
-4. Checks if the speed is within the limit and prints okay if true.
-
-5.Calcilates demerit points if the speed exeedes tyhe limit.
-
-6.Prints the number of demerit points
-
-7.Prints "Lincence suspended if the demerit points exeed tyhe maximum allowed .
-
-### code 
-
+## code 
 
 function speedDetector(){
 
-    let speed =  prompt ("Speed of the car:");
 
-    // converts input to a number
+    let speed = 80;
 
-    speed = Number(speed);
-
-    //validates the input
-
-    if (isNaN(speed) || speed <0 ) { 
-
-        console.log("Kindly enter a valid speed.");
-
-        return;
-
-    }
-
-    //Determine speed limit and demerit 
-
-    const speedLimit = 70;
-    const kmPerDemeritPoint = 5;
-    const maxDemeritPoints = 12;
-
-
-    //Check the speed
-
-    if (speed <= speedLimit ){
+    if (speed < 70) { 
         console.log("Ok");
-    }
-    else { 
-        //calculate demerit points 
-
-        let demeritPoints = Math.floor((speed - speedLimit) / 
-        kmPerDemeritPoint);
-        
-
-        //Check  if demerit points exceed
-
-        if (demeritPoints > maxDemeritPoints) {
-            console.log("LIcence suspended");
+    } else {
+        let demeritPoints = Math.floor((speed - 70) / 5);
+        if (demeritPoints > 12 ){
+            console,log("License suspended");
+        } else { 
+            return demeritPoints
         }
-
-        
-
     }
-
-
+     
 }
 
-//call the function to promt
+console.log(speedDetector());
 
-speedDetector()
 
 
 ## usage 
@@ -279,7 +227,7 @@ Call the function by typing speedDetector() in the console then press enter
 Follow the prompt to enter the speed of the car   and see  the corresponding result displayed on the console.
 
 
-This `README.md` provides a clear description of the challenge , the function implementation , usage instructions . 
+ 
 
 
 
@@ -292,7 +240,9 @@ It calculates the payee , NHIF Deductions, NSSF Deductions , gross salary and ne
 Specific values used are gotten fron the websites provided.
 
 
-## code
+### code
+
+
 
 
 const  basicSalary = parsefloat(prompt('Kindly enter your basic salary '));
@@ -313,23 +263,23 @@ else {
 
     console.log('Gross Salary: ${grossSalary}')
 
-
-    //PAYE
+    // Paye
 
     let paye = 0;
-    if(grossSalary <= 24000){
+    if(grossSalary <= 28895){
         paye = grossSalary * 0.1;
     }
-    else if (grossSalary <= 32333) {
-        paye = (grossSalary - 24000) * 0.15;
+    else if (grossSalary <= 38895) {
+        paye = 2889.5 + (grossSalary-28895) * 0.15;
     }
-    else if (grossSalary <= 40667) {
-        paye = (grossSalary - 32333) * 0.2;
+    else if (grossSalary <= 56395) {
+        paye = 5889.5 + (grossSalary - 38895) * 0.2;
     }
-    else if (grossSalary <= 57000 ) {
-        paye = (grossSalary - 40667) * 0.25;
+    else if (grossSalary <= 71695) {
+        paye = 10889.5 + (grossSalary - 56395) * 0.25;
     }
-    else {paye = (grossSalary - 57000) * 0.3;
+    else {
+        paye = 15189.5 + (grossSalary - 71695) * 0.3;
 
     }
 
@@ -390,32 +340,86 @@ else {
         nhifDeductions = 1600}
 
     else{nhifDeductions = 1700;}
+
+
+    //NHIF Deductions
     
+    console.log(`NHIF Deductions : ${nhifDeductions}`)
    
-    console.log(`Gross Salary: ${grossSalary}`)
    
-    
-//NSSF deductions
+    //NSSF deductions
 
-const nssfDeductions = grossSalary * 0.06;
+   const nssfDeductions = grossSalary * 0.06;
 
-console.log(`NSSF Deductions: ${nssfDeductions}`) 
-
-//this code calculates the nssf deductions by taking 6% of the gross salary and then logs a message to the console  showing calculated nssf deductions.
+    console.log(`NSSF Deductions: ${nssfDeductions}`)
 
 
-   ///Housing levy
+   //Housing levy
 
    const housingLevy = grossSalary * 0.015;
 
-   console.log(`Housing levy ${grossSalary}`)
+   console.log(`Housing levy ${housingLevy}`)
 
-   // this code calculates the housing levy by taking 15% of the gross salary then logs a message to then console showing the calculated housing levy.
+   //NET SALARY
+
+   let netSalary = grossSalary-paye-nhifDeductions-nssfDeductions-housingLevy;
+
+   console.log(`Net Salary: ${netSalary}`);
+
+
+};
+
+console.log(netSalary());
 
 
 
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+    
 
 
 

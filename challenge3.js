@@ -21,19 +21,20 @@ else {
     // Paye
 
     let paye = 0;
-    if(grossSalary <= 24000){
+    if(grossSalary <= 28895){
         paye = grossSalary * 0.1;
     }
-    else if (grossSalary <= 32333) {
-        paye = (grossSalary - 24000) * 0.15;
+    else if (grossSalary <= 38895) {
+        paye = 2889.5 + (grossSalary-28895) * 0.15;
     }
-    else if (grossSalary <= 40667) {
-        paye = (grossSalary - 32333) * 0.2;
+    else if (grossSalary <= 56395) {
+        paye = 5889.5 + (grossSalary - 38895) * 0.2;
     }
-    else if (grossSalary <= 57000 ) {
-        paye = (grossSalary - 40667) * 0.25;
+    else if (grossSalary <= 71695) {
+        paye = 10889.5 + (grossSalary - 56395) * 0.25;
     }
-    else {paye = (grossSalary - 57000) * 0.3;
+    else {
+        paye = 15189.5 + (grossSalary - 71695) * 0.3;
 
     }
 
@@ -94,28 +95,36 @@ else {
         nhifDeductions = 1600}
 
     else{nhifDeductions = 1700;}
+
+
+    //NHIF Deductions
     
+    console.log(`NHIF Deductions : ${nhifDeductions}`)
    
-    console.log(`Gross Salary: ${grossSalary}`)
    
-    
-//NSSF deductions
+    //NSSF deductions
 
-const nssfDeductions = grossSalary * 0.06;
+   const nssfDeductions = grossSalary * 0.06;
 
-console.log(`NSSF Deductions: ${nssfDeductions}`)
+    console.log(`NSSF Deductions: ${nssfDeductions}`)
 
 
-   ///Housing levy
+   //Housing levy
 
    const housingLevy = grossSalary * 0.015;
 
-   console.log(`Housing levy ${grossSalary}`)
+   console.log(`Housing levy ${housingLevy}`)
+
+   //NET SALARY
+
+   let netSalary = grossSalary-paye-nhifDeductions-nssfDeductions-housingLevy;
+
+   console.log(`Net Salary: ${netSalary}`);
 
 
+};
 
-          
-}
+console.log(netSalary());
 
 
 
